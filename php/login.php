@@ -22,6 +22,7 @@ if(isset($_POST['email']) && !empty($_POST['email']) && isset($_POST['senha']) &
 
     }else{
         $_SESSION['msg'] = "Login ou senha invalidos";
+        
         header("location: ../index.php");
         exit;
     }

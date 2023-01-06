@@ -34,30 +34,30 @@ if(isset($_SESSION['usu']) && !empty($_SESSION['usu'])):
 
     <body>
 
-        <div id="login">
+        <div class="d-flex justify-content-center h-100" id="login">
 
             <form class="card" action="../bancoWiti/php/login.php" method="POST">
 
                 <div class="card-header">
-                <label for="usuario"><h2>
-                    <?php echo $nomeUsuario;?></h2> Bem vindo ao banco Witi!!
+                <label for="nomeUsuario"><strong><h3 style="text-transform: uppercase">
+                    <?php echo $nomeUsuario;?></h3></strong> Bem vindo ao banco Witi!!
                 </label> 
-                    <h2><?php echo $dado['nome']?>bancoWiti</h2>
+                    
                     
                 </div>
 
-                <div class="card-content">
+                
+                <div class="card-header">
+                <label for="nomeUsuario">
+                  Valor disponivel para saque: R$  <?php echo $saldoUsuario;?>
+                </label> 
+                    
+                    
+                </div>
+
+        <div class="card-content">
 
                     <div class="card-content-area">
-
-                       
-                        <div class="card-content-area">
-
-                <label for="usuario">Saldo</label>
-                        
-
-                    </div>
-
             </form>
 
         </div>

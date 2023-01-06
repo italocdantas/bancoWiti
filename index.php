@@ -6,6 +6,7 @@ require 'php/login.php';
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/js/java.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 
 <!DOCTYPE html>
@@ -35,12 +36,15 @@ require 'php/login.php';
 				<span><i class="fab fa-twitter-square"></i></span>
 			</div>
 		</div>
-	<div class="card-body" style="color:aliceblue">
+	<div id="alerta">
 	<?php 
 		if(isset($_SESSION['msg'])){
+			
 		echo $_SESSION['msg'];
+		
+	}
 		unset($_SESSION['msg']);
-		}
+		
 	?>
 	</div>
 		<div class="card-body">
