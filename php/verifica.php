@@ -9,7 +9,7 @@ if(isset($_SESSION['usu']) && !empty($_SESSION['usu'])){
     $usuariologado = $u->logged($_SESSION['usu']);
     $nomeUsuario = $usuariologado['nome'];
     $saldoUsuario = $usuariologado['saldo'];
-
+//novo
 
    
 
