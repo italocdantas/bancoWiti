@@ -22,7 +22,29 @@ class Usuario{
         }
     }
 
-}
+        public function logged($id){
+            global $conn;
+
+            $array = array();
+
+            $sql = "SELECT nome FROM pessoas WHERE id = :id";
+            $sql = $conn->prepare($sql);
+            $sql -> bindValue(":id", $id);
+            $sql-> execute();
+
+
+            if($sql->rowCount() > 0){
+                $array = $sql->fetch();
+               
+            }
+
+            return $array;
+        
+
+        }
+    }
+
+
 
 
 

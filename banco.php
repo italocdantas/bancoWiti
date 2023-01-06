@@ -1,7 +1,10 @@
 
 <?php 
-include 'php/Usuario.class.php';
-require 'php/conexao.php'
+
+require 'php/conexao.php';
+require 'php/verifica.php';
+if(isset($_SESSION['usu']) && !empty($_SESSION['usu'])):
+
 
 ?>
 
@@ -36,7 +39,9 @@ require 'php/conexao.php'
             <form class="card" action="../bancoWiti/php/login.php" method="POST">
 
                 <div class="card-header">
-                <label for="usuario">Bem vindo ao banco Witi!!</label> 
+                <label for="usuario"><h2>
+                    <?php echo $nomeUsuario;?></h2> Bem vindo ao banco Witi!!
+                </label> 
                     <h2><?php echo $dado['nome']?>bancoWiti</h2>
                     
                 </div>
@@ -62,3 +67,5 @@ require 'php/conexao.php'
             </div>
         </a>
     </body>
+</html>
+<?php else: header("location: ../bancoWiti/index.php"); endif; ?>
