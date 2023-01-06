@@ -37,15 +37,15 @@ require 'php/login.php';
 			</div>
 		</div>
 	<div id="alerta">
-	<?php 
-		if(isset($_SESSION['msg'])){
-			
-		echo $_SESSION['msg'];
-		
-	}
-		unset($_SESSION['msg']);
-		
-	?>
+					<?php 
+						if(isset($_SESSION['msg'])){
+							
+						echo $_SESSION['msg'];
+						
+					}
+						unset($_SESSION['msg']);
+						
+					?>
 	</div>
 		<div class="card-body">
 			<form action="../bancoWiti/php/login.php" method="POST">
