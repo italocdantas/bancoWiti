@@ -1,2 +1,3 @@
 # bancoWiti
-Sistema de banco
+Projeto Banco Digital
+release1.0
