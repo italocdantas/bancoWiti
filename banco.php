@@ -61,6 +61,10 @@ if(isset($_SESSION['usu']) && !empty($_SESSION['usu'])):
             </form>
 
         </div>
+
+        <div class= "btn float-right login_btn">
+                 SACAR 
+            </div>
         <a href="../bancoWiti/php/logout.php"> 
             <div class= "btn float-right login_btn">
                  SAIR 

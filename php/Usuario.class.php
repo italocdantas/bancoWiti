@@ -17,9 +17,10 @@ class Usuario{
           $_SESSION['usu'] = $dado['id'];
 
           return true;
-        }else{
-            return false;
+          
         }
+            return false;
+        
     }
 
         public function logged($id){
